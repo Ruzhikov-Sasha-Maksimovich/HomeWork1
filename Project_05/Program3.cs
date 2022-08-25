@@ -1,43 +1,13 @@
-﻿Console.Clear()
+System.Console.WriteLine("Введите число: ");
+int chislo = Convert.ToInt32(Console.ReadLine()!);
+string chisloText = Convert.ToString(chislo);
+int sum = 0;
+int index = 0;
 
-System.Console.WriteLine("Введите номер дня недели: ");
-int date = int.Parse(Console.ReadLine()!);
-
-switch (date)
+while(chislo > index)
 {
-    case 1:
-    {
-        System.Console.WriteLine("Рабочий день.");
-        break;
-    }
-    case 2:
-    {
-        System.Console.WriteLine("Рабочий день.");
-        break;
-    }
-    case 3:
-    {
-        System.Console.WriteLine("Рабочий день.");
-        break;
-    }
-    case 4:
-    {
-        System.Console.WriteLine("Рабочий день.");
-        break;
-    }
-    case 5:
-    {
-        System.Console.WriteLine("Рабочий день.");
-        break;
-    }
-    case 6:
-    {
-        System.Console.WriteLine("Выходной день.");
-        break;
-    }
-    case 7:
-    {
-        System.Console.WriteLine("Выходной день.");
-        break;
-    }  
+    int result = chislo % 10;
+    chislo = chislo / 10;
+    sum = sum + result;
 }
+System.Console.WriteLine($"Сумма чисел числа {chisloText} равна {sum}");
