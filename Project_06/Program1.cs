@@ -1,8 +1,10 @@
-﻿Console.Write("Введите число: ");
-int number = int.Parse(Console.ReadLine());
-if (number > 99){
-  Console.WriteLine($"третья цифра {number % 10}");
-}
-else if (number < 100) {
-  Console.WriteLine("В числе нет 3 цифры");
-}
+    Console.WriteLine("Введите число: ");
+    int chislo1 = Convert.ToInt32(Console.ReadLine()!);
+    Console.WriteLine("Введите число: ");
+    int chislo2 = Convert.ToInt32(Console.ReadLine()!);
+    int sum = Convert.ToInt32(chislo1);
+for (int i = 1; i < chislo2; i++)
+    {
+        sum = sum * chislo1;
+    }
+    Console.WriteLine(sum);
